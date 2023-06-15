@@ -9,7 +9,7 @@ public class NumberBaseballGame {
         int[] computerNumbers = new int[4];
         for (int i = 0; i < 4; i++) {
             computerNumbers[i] = rand.nextInt(9) + 1; // Generates a number between 1 and 9.
-            for (int j = 0; j < i; j++) { // Make sure there are no duplicate numbers.
+            for (int j = 0; j < i; j++) { // Make sure there are no duplicate numbers!
                 if (computerNumbers[i] == computerNumbers[j]) {
                     i--;
                     break;
